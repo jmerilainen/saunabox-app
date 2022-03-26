@@ -23,4 +23,9 @@ class Sauna extends Model
     {
         return $this->hasOne(Opening::class);
     }
+
+    public function slotsForDate($date)
+    {
+        return $this->opening->slotsForDate($date);
+    }
 }

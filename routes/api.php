@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Api\Controllers\SaunaController;
+use App\Http\Api\Controllers\SaunaSlotDateController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/saunas', [SaunaController::class, 'index'])->name('api.saunas');
 Route::get('/saunas/{sauna:slug}', [SaunaController::class, 'show'])->name('api.sauna');
+Route::get('/saunas/{sauna:slug}/slots/{date}', [SaunaSlotDateController::class, 'index'])->name('api.sauna.slots');
