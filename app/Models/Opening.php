@@ -58,9 +58,20 @@ class Opening extends Model
                     $slot->from = $date;
                     $slot->to = $date->addHour(1)->subMinutes(10);
                     $slot->available = $date->greaterThan(now());
+                    $slot->sku = $date->format('YmdHi');
 
                     return $slot;
                 });
         });
+    }
+
+    public function findAvailableSlotBySku($sku)
+    {
+        $date = Date::createFromFormat('YmdHi', $sku);
+
+        return $this->slotsForDate($date)->filter(function ($slot) use ($sku) {
+            return $slot->sku === $sku
+                && $slot->available;
+        })->first();
     }
 }

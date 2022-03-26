@@ -3,13 +3,12 @@
 namespace App\Http\Api\Controllers;
 
 use App\Models\Sauna;
-use Illuminate\Http\Request;
 
 class SaunaSlotDateController
 {
-    public function index(Sauna $sauna, Request $request)
+    public function index(Sauna $sauna, $date)
     {
-        $slots = $sauna->slotsForDate($request->date);
+        $slots = $sauna->slotsForDate($date);
 
         return response()->json($slots->map(fn ($slot) => $this->format($slot)));
     }
@@ -17,6 +16,7 @@ class SaunaSlotDateController
     protected function format($slot)
     {
         return [
+            'sku' => $slot->sku,
             'slug' => $slot->from->format('Hi'),
             'from' => $slot->from,
             'to' => $slot->to,

@@ -16,7 +16,9 @@ it('shows sauna\'s time slots', function () {
 
     // Monday
     $this
-        ->get(route('api.sauna.slots', ['sauna' => $sauna->slug, 'date' => '2022-03-21']))
-        ->dd()
+        ->get(route('api.sauna.slots', [
+            'sauna' => $sauna->slug,
+            'date' => '2022-03-21',
+        ]))
         ->assertJson([]);
 });
