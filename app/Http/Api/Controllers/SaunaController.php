@@ -11,8 +11,12 @@ class SaunaController
     {
         $saunas = Sauna::all();
 
-
         return response()->json($saunas->map(fn ($sauna) => $this->format($sauna)));
+    }
+
+    public function show(Sauna $sauna)
+    {
+        return response()->json($this->format($sauna));
     }
 
     protected function format(Sauna $sauna)

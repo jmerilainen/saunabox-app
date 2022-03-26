@@ -2,7 +2,7 @@
 
 use Illuminate\Testing\Fluent\AssertableJson;
 
-it('allows an author to view a preview post', function () {
+it('shows all saunas as json', function () {
     $saunas = sauna()
         ->count(3)
             ->hasLocation()
@@ -22,4 +22,20 @@ it('allows an author to view a preview post', function () {
                         ->etc()
                 )
         );
+});
+
+it('shows a sauna as json', function () {
+    $saunas = sauna()
+        ->count(3)
+            ->hasLocation()
+            ->hasOpening()
+        ->create();
+
+    $frist = $saunas->first();
+
+    $this
+        ->get(route('api.sauna', ['sauna' => $frist->slug]))
+        ->assertJson([
+            'id' => $frist->id,
+        ]);
 });

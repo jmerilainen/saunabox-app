@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/saunas', [SaunaController::class, 'index'])->name('api.saunas');
+Route::get('/saunas/{sauna:slug}', [SaunaController::class, 'show'])->name('api.sauna');
