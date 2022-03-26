@@ -9,7 +9,5 @@ it('can create a slot model', function() {
         'code' => '0493',
     ]);
 
-
-
-    expect($slot)->dd()->toBe('0493');
+    expect($slot->code)->toBe('0493');
 });
