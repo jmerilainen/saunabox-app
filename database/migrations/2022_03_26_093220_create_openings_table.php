@@ -14,11 +14,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('opening_hours', function (Blueprint $table) {
+        Schema::create('openings', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->foreignIdFor(Sauna::class)->constrained();
-            $table->json('data');
+            $table->json('hours');
         });
     }
 
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('opening_hours');
+        Schema::dropIfExists('openings');
     }
 };

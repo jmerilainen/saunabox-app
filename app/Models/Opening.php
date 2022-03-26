@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class OpeningHours extends Model
+class Opening extends Model
 {
     use HasFactory;
 
     protected $casts = [
-        'data' => 'array',
+        'hours' => 'array',
     ];
 }

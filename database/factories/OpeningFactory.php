@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\OpeningHours>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Opening>
  */
-class OpeningHoursFactory extends Factory
+class OpeningFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,7 +18,7 @@ class OpeningHoursFactory extends Factory
     {
         return [
             'sauna_id' => sauna(),
-            'data' => [
+            'hours' => [
                 'monday'     => ['09:00-12:00', '13:00-18:00'],
                 'tuesday'    => ['09:00-12:00', '13:00-18:00'],
                 'wednesday'  => ['09:00-12:00'],
