@@ -9,12 +9,12 @@ class Purchase extends Model
 {
     use HasFactory;
 
-    protected function slot()
+    public function slot()
     {
         return $this->belongsTo(Slot::class);
     }
 
-    protected function user()
+    public function user()
     {
         return $this->belongsTo(User::class);
     }

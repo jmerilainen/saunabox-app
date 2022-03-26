@@ -9,7 +9,7 @@ class Location extends Model
 {
     use HasFactory;
 
-    protected function sauna()
+    public function sauna()
     {
         return $this->belongsTo(Sauna::class);
     }
