@@ -11,6 +11,8 @@
 |
 */
 
+use Database\Factories\LocationFactory;
+use Database\Factories\OpeningFactory;
 use Database\Factories\SaunaFactory;
 use Database\Factories\SlotFactory;
 use Database\Factories\UserFactory;
@@ -56,4 +58,14 @@ function slot(): SlotFactory
 function user(): UserFactory
 {
     return UserFactory::new();
+}
+
+function opening(): OpeningFactory
+{
+    return OpeningFactory::new();
+}
+
+function location(): LocationFactory
+{
+    return LocationFactory::new();
 }
