@@ -19,7 +19,7 @@ class PurchaseController
             'sku' => ['required', 'digits:12'],
         ]);
 
-        $slot = Sauna::findOrFail($data['sauna'])->opening->findAvailableSlotBySku($data['sku']);
+        $slot = Sauna::findOrFail($data['sauna'])->findAvailableSlotBySku($data['sku']);
 
         abort_if(! $slot, 400);
 

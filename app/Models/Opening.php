@@ -64,14 +64,4 @@ class Opening extends Model
                 });
         });
     }
-
-    public function findAvailableSlotBySku($sku)
-    {
-        $date = Date::createFromFormat('YmdHi', $sku);
-
-        return $this->slotsForDate($date)->filter(function ($slot) use ($sku) {
-            return $slot->sku === $sku
-                && $slot->available;
-        })->first();
-    }
 }
