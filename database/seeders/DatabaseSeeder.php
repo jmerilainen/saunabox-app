@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         Sauna::factory()
             ->hasLocation()
             ->hasOpening()
-            ->count(10)
+            ->count(5)
             ->create();
     }
 }
