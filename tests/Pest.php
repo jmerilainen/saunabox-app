@@ -12,6 +12,8 @@
 */
 
 use Database\Factories\SaunaFactory;
+use Database\Factories\SlotFactory;
+use Database\Factories\UserFactory;
 
 uses(Tests\TestCase::class)->in('Feature');
 
@@ -44,4 +46,14 @@ expect()->extend('toBeOne', function () {
 function sauna(): SaunaFactory
 {
     return SaunaFactory::new();
+}
+
+function slot(): SlotFactory
+{
+    return SlotFactory::new();
+}
+
+function user(): UserFactory
+{
+    return UserFactory::new();
 }
