@@ -5,7 +5,7 @@ namespace Tests\Unit;
 use App\Models\Sauna;
 use App\Models\Slot;
 
-it('can create a slot model', function() {
+it('can create a slot model', function () {
     $slot = Slot::factory()->create([
         'code' => '0493',
     ]);

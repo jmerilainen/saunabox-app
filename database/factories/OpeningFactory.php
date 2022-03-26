@@ -22,6 +22,7 @@ class OpeningFactory extends Factory
             ['07:00-23:00'],
         ];
     }
+
     /**
      * Define the model's default state.
      *
@@ -29,22 +30,21 @@ class OpeningFactory extends Factory
      */
     public function definition()
     {
-
         return [
             'sauna_id' => SaunaFactory::new(),
             'hours' => [
-                'monday'     => $this->faker->randomElement($this->data()),
-                'tuesday'    => $this->faker->randomElement($this->data()),
-                'wednesday'  => $this->faker->randomElement($this->data()),
-                'thursday'   => $this->faker->randomElement($this->data()),
-                'friday'     => $this->faker->randomElement($this->data()),
-                'saturday'   => $this->faker->randomElement($this->data()),
-                'sunday'     => [],
+                'monday' => $this->faker->randomElement($this->data()),
+                'tuesday' => $this->faker->randomElement($this->data()),
+                'wednesday' => $this->faker->randomElement($this->data()),
+                'thursday' => $this->faker->randomElement($this->data()),
+                'friday' => $this->faker->randomElement($this->data()),
+                'saturday' => $this->faker->randomElement($this->data()),
+                'sunday' => [],
                 'exceptions' => [
                     '2016-11-11' => $this->faker->randomElement($this->data()),
                     '2016-12-25' => [],
-                    '01-01'      => [],
-                    '12-25'      => $this->faker->randomElement($this->data()),
+                    '01-01' => [],
+                    '12-25' => $this->faker->randomElement($this->data()),
                 ],
             ],
         ];

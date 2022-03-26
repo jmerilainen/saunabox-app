@@ -6,7 +6,7 @@ use App\Models\Purchase;
 use App\Models\Slot;
 use App\Models\User;
 
-it('can create a purchase model', function() {
+it('can create a purchase model', function () {
     $purchase = Purchase::factory()->create();
 
     expect($purchase)->toBeInstanceOf(Purchase::class);

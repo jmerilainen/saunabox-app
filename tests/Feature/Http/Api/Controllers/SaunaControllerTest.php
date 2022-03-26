@@ -13,9 +13,11 @@ it('shows all saunas as json', function () {
 
     $this
         ->get(route('api.saunas'))
-        ->assertJson(fn (AssertableJson $json) =>
+        ->assertJson(
+            fn (AssertableJson $json) =>
             $json->has(3)
-                ->first(fn ($json) =>
+                ->first(
+                    fn ($json) =>
                     $json->where('id', $frist->id)
                         ->where('name', $frist->name)
                         ->where('slug', $frist->slug)

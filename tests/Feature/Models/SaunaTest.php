@@ -6,7 +6,7 @@ use App\Models\Location;
 use App\Models\Sauna;
 use Spatie\OpeningHours\OpeningHours;
 
-it('can create a sauna model', function() {
+it('can create a sauna model', function () {
     $sauna = Sauna::factory()->create([
         'name' => 'Matinkylän ranta',
     ]);

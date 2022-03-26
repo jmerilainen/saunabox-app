@@ -53,7 +53,7 @@ class Opening extends Model
 
             return collect($hours)
                 ->map(function (CarbonImmutable $date) {
-                    $slot = new Slot;
+                    $slot = new Slot();
                     $slot->sauna_id = $this->sauna->id;
                     $slot->from = $date;
                     $slot->to = $date->addHour(1)->subMinutes(10);

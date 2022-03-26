@@ -43,6 +43,7 @@ class Sauna extends Model
             $used = $slots->filter(function ($slot) use ($item) {
                 $item['from'] = Date::create($item['from']);
                 $item['to'] = Date::create($item['to']);
+
                 return $item['from']->greaterThanOrEqualTo($slot->from) && $item['to']->lessThanOrEqualTo($slot->to);
             })->first();
 
