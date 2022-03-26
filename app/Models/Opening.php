@@ -14,6 +14,11 @@ class Opening extends Model
         'hours' => 'array',
     ];
 
+    protected function sauna()
+    {
+        return $this->belongsTo(Sauna::class);
+    }
+
     public function hours(): OpeningHours
     {
         return OpeningHours::create($this->hours);

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Slot extends Model
 {
     use HasFactory;
+
+    protected function sauna()
+    {
+        return $this->belongsTo(Sauna::class);
+    }
 }
