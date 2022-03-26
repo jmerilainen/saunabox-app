@@ -17,7 +17,7 @@ class LocationFactory extends Factory
     public function definition()
     {
         return [
-            'sauna_id' => sauna(),
+            'sauna_id' => SaunaFactory::new(),
             'latitude' => $this->faker->latitude(),
             'longitude' => $this->faker->longitude(),
         ];

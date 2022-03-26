@@ -17,8 +17,8 @@ class PurchaseFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => user(),
-            'slot_id' => slot(),
+            'user_id' => UserFactory::new(),
+            'slot_id' => SlotFactory::new(),
             'status' => 'pending',
         ];
     }

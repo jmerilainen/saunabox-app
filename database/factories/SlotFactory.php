@@ -17,7 +17,7 @@ class SlotFactory extends Factory
     public function definition()
     {
         return [
-            'sauna_id' => sauna(),
+            'sauna_id' => SaunaFactory::new(),
             'from' => now(),
             'to' => fn (array $attributes) => (clone $attributes['from'])->modify('+50 minutes'),
             'code' => $this->faker->randomFloat(0, 1000, 9999),

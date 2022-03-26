@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Sauna;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,6 +15,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        Sauna::factory()
+            ->hasLocation()
+            ->hasOpening()
+            ->count(10)
+            ->create();
     }
 }

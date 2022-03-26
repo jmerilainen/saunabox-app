@@ -17,7 +17,7 @@ class OpeningFactory extends Factory
     public function definition()
     {
         return [
-            'sauna_id' => sauna(),
+            'sauna_id' => SaunaFactory::new(),
             'hours' => [
                 'monday'     => ['09:00-12:00', '13:00-18:00'],
                 'tuesday'    => ['09:00-12:00', '13:00-18:00'],
