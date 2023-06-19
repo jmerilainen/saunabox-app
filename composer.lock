@@ -3044,16 +3044,16 @@
         },
         {
             "name": "spatie/opening-hours",
-            "version": "2.13.0",
+            "version": "2.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/opening-hours.git",
-                "reference": "befffe986db3e439a2985033694d4175f80c581e"
+                "reference": "2113e289b16340b24ea0743a7179ebc9dcbe5e64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/opening-hours/zipball/befffe986db3e439a2985033694d4175f80c581e",
-                "reference": "befffe986db3e439a2985033694d4175f80c581e",
+                "url": "https://api.github.com/repos/spatie/opening-hours/zipball/2113e289b16340b24ea0743a7179ebc9dcbe5e64",
+                "reference": "2113e289b16340b24ea0743a7179ebc9dcbe5e64",
                 "shasum": ""
             },
             "require": {
@@ -3092,9 +3092,9 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/opening-hours/issues",
-                "source": "https://github.com/spatie/opening-hours/tree/2.13.0"
+                "source": "https://github.com/spatie/opening-hours/tree/2.41.0"
             },
-            "time": "2022-08-07T15:46:29+00:00"
+            "time": "2023-06-12T19:54:57+00:00"
         },
         {
             "name": "symfony/console",
