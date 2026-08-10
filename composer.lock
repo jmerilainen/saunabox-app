@@ -1108,12 +1108,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "6055d9594c9da265ddbf1e27e7dd8f09624568bc"
+                "reference": "feb47bae900315eb9b030de98626b384cbbb86ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6055d9594c9da265ddbf1e27e7dd8f09624568bc",
-                "reference": "6055d9594c9da265ddbf1e27e7dd8f09624568bc",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/feb47bae900315eb9b030de98626b384cbbb86ac",
+                "reference": "feb47bae900315eb9b030de98626b384cbbb86ac",
                 "shasum": ""
             },
             "require": {
@@ -1298,7 +1298,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-09-30T14:57:50+00:00"
+            "time": "2026-08-07T13:41:38+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -1495,16 +1495,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.8.3",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "1902f60f984235023acbe03db6ad614a37b3c3e7"
+                "reference": "73cb188c785abfa7a7bec73487148202968274c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/1902f60f984235023acbe03db6ad614a37b3c3e7",
-                "reference": "1902f60f984235023acbe03db6ad614a37b3c3e7",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/73cb188c785abfa7a7bec73487148202968274c6",
+                "reference": "73cb188c785abfa7a7bec73487148202968274c6",
                 "shasum": ""
             },
             "require": {
@@ -1541,7 +1541,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.9-dev"
+                    "dev-main": "2.10-dev"
                 }
             },
             "autoload": {
@@ -1598,7 +1598,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-12T15:29:16+00:00"
+            "time": "2026-08-09T14:10:38+00:00"
         },
         {
             "name": "league/config",
@@ -4152,16 +4152,16 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.38.1",
+            "version": "v1.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "e9247d281d694a5120554d9afaf54e070e88a603"
+                "reference": "bb899c1db0aa8127dc3afe8cda4a67eb24915f8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/e9247d281d694a5120554d9afaf54e070e88a603",
-                "reference": "e9247d281d694a5120554d9afaf54e070e88a603",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/bb899c1db0aa8127dc3afe8cda4a67eb24915f8d",
+                "reference": "bb899c1db0aa8127dc3afe8cda4a67eb24915f8d",
                 "shasum": ""
             },
             "require": {
@@ -4210,7 +4210,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.38.1"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.41.0"
             },
             "funding": [
                 {
@@ -4230,7 +4230,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-26T05:58:03+00:00"
+            "time": "2026-07-28T08:25:59+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -6360,16 +6360,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.64.0",
+            "version": "v1.65.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "08cacd3e72d6798df3fa8bd4b5d55d0f7f920625"
+                "reference": "d4b92139858d2a189a6302ca133e494f58afe20b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/08cacd3e72d6798df3fa8bd4b5d55d0f7f920625",
-                "reference": "08cacd3e72d6798df3fa8bd4b5d55d0f7f920625",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/d4b92139858d2a189a6302ca133e494f58afe20b",
+                "reference": "d4b92139858d2a189a6302ca133e494f58afe20b",
                 "shasum": ""
             },
             "require": {
@@ -6419,7 +6419,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2026-07-17T15:09:35+00:00"
+            "time": "2026-08-03T18:00:17+00:00"
         },
         {
             "name": "mockery/mockery",
